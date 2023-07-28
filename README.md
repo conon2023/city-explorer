@@ -1,70 +1,90 @@
-# Getting Started with Create React App
+# City Explorer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Author**: Chidi Ononye
+**Version**: 1.0.0 (increment the patch/fix version number if you make more commits past your first submission)
 
-## Available Scripts
+## Overview
+This is a React application that will allow users initiate requests for data from a third-part API using the Axios library.  
 
-In the project directory, you can run:
+## Getting Started
+To build a React App that will allow users initiate requests for data from a third-party API, follow these steps:
 
-### `npm start`
+A. Set Up Your Development Environment: 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Install Node.js: Download and install (https://nodejs.org/). This will also include npm (Node Package Manager).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. Install a Code Editor: A good one will be VScode (https://code.visualstudio.com/) for writing and managing your React code.
 
-### `npm test`
+3. Create a New React App:
+   Open your terminal (command prompt) and run the following command to create a new React app using the create-react-app tool: npx create-react-app my-app
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+4. Replace "my-app" with your desired project name. 
 
-### `npm run build`
+5. This command will create a new folder with the project files. Navigate to the Project Directory:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   Move into the project directory using the following command: bash Copy code cd my-app
+   Again, replace "my-app" with your project name.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+6. Install Axios:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   Axios is a popular library used for making HTTP requests. Install it using npm with the following command:
+   Copy code
+   npm install axios
 
-### `npm run eject`
+7. Build the Components:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   Create the necessary React components for your application. These components will contain the logic and UI for handling API requests and displaying data.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+8. Import Axios:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   In the component where you want to make API requests, import Axios at the top of the file:
+   javascript
+   Copy code
+   import axios from 'axios';
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+9. Make API Requests:
 
-## Learn More
+   Inside the component, use Axios to make HTTP requests to the third-party API. For example, to make a GET request:
+   javascript
+   Copy code
+   axios.get('https://api.example.com/data')
+  .then(response => {
+    // Handle the response data here
+    })
+    .catch(error => {
+    // Handle errors
+    });
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+10. Render Data:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Use React state to store the API response data and render it in your UI.
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+11. Start the Development Server:
 
-### Analyzing the Bundle Size
+    In the terminal, run the following command to start the development server and see your app in the browser:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+    sql
+    Copy code
+    npm start
+    Test Your App:
 
-### Making a Progressive Web App
+    Open your web browser and go to http://localhost:3000 to see your React app running.
+    Now, you have a basic React application set up that allows users to initiate requests for data from a third-party API using the Axios library. 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+## Architecture
+<!-- Provide a detailed description of the application design. What technologies (languages, libraries, etc) you're using, and any other relevant design information. -->
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Change Log
+<!-- Use this area to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an example:
+
+01-01-2001 4:59pm - Application now has a fully-functional express server, with a GET route for the location resource. -->
+
+## Credit and Collaborations
+<!-- Give credit (and a link) to other people or resources that helped you build this application. -->
+Time Estimates
